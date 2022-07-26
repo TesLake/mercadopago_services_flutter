@@ -94,7 +94,7 @@ class MercadopagoServicesPlugin : FlutterPlugin, MethodCallHandler, ActivityAwar
         )
         mpServices.createToken(cardToken, object : Callback<Token?>() {
             override fun success(token: Token?) {
-                Log.d("MP TOKEN SUCCESS", "SUCCESS" + token!!.id)
+                // Log.d("MP TOKEN SUCCESS", "SUCCESS" + token!!.id)
                 result.success(token!!.toJson())
             }
 
@@ -112,11 +112,10 @@ class MercadopagoServicesPlugin : FlutterPlugin, MethodCallHandler, ActivityAwar
         result: MethodChannel.Result
     ) {
         val mpServices = MercadoPagoServices(context, publicKey, null)
-//        val cardToken = SavedCardToken("1657736829196", "123")
         val cardToken = SavedCardToken(cardId, securityCode)
         mpServices.createToken(cardToken, object : Callback<Token?>() {
             override fun success(token: Token?) {
-                Log.d("MP TOKEN SUCCESS", "SUCCESS" + token!!.id)
+                // Log.d("MP TOKEN SUCCESS", "SUCCESS" + token!!.id)
                 result.success(token!!.toJson())
             }
 
