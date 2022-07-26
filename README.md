@@ -1,6 +1,15 @@
-# mercadopago_services
+# Mercado Pago Services
 
-A new Flutter plugin project.
+Unofficial flutter implementation of Mercado Pago using their native libraries px-android, px-ios and javascript sdk for web.
+
+Has only been tested in Mexico.
+
+## TODO
+- MercadoPago checkout
+- ios implementation
+- web implementation
+- testing scripts
+- example app
 
 ## Getting Started
 
