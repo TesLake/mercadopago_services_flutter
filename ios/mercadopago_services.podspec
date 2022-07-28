@@ -15,7 +15,12 @@ A new Flutter plugin project.
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.platform = :ios, '9.0'
+  # See https://github.com/mercadopago/px-ios/issues/2386
+  s.dependency 'MercadoPagoSDK', '~> 4.32.4'
+  s.dependency 'MLBusinessComponents', '1.29.0'
+  s.dependency 'MLCardForm', '0.9.1'
+  s.dependency 'MLCardDrawer', '1.5.1'
+  s.platform = :ios, '10.0'
 
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }

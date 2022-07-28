@@ -1,5 +1,6 @@
 import Flutter
 import UIKit
+import MercadoPagoSDK
 
 public class SwiftMercadopagoServicesPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
