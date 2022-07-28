@@ -37,6 +37,8 @@ flutter:
       android:
         package: com.teslake.mercadopago_services
         pluginClass: MercadopagoServicesPlugin
+      ios:
+        pluginClass: MercadopagoServicesPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
